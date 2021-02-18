@@ -1,5 +1,5 @@
-import Fluent
-import FluentSQLiteDriver
+//import Fluent
+//import FluentSQLiteDriver
 import Vapor
 
 // configures your application
@@ -10,9 +10,9 @@ public func configure(_ app: Application) throws {
     app.routes.defaultMaxBodySize = "100mb"
 
 
-    app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
+//    app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
 
-    app.migrations.add(CreateTodo())
+//    app.migrations.add(CreateTodo())
 
     // register routes
     try routes(app)
